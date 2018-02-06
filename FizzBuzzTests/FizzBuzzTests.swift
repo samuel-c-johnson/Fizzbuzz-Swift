@@ -16,21 +16,27 @@ class FizzBuzzTests: XCTestCase {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+//    override func tearDown() {
+//        // Put teardown code here. This method is called after the invocation of each test method in the class.
+//        super.tearDown()
+//    }
+    
+    func testMaths1() {
+        let fizzbuzz = fizzBuzz()
+        let result = fizzbuzz.maths(number: 3)
+        XCTAssertEqual(result, "fizz")
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testMaths2() {
+        let fizzbuzz = fizzBuzz()
+        let result = fizzbuzz.maths(number: 5)
+        XCTAssertEqual(result, "buzz")
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testMaths3() {
+        let fizzbuzz = fizzBuzz()
+        let result = fizzbuzz.maths(number: 15)
+        XCTAssertEqual(result, "fizzbuzz")
     }
     
 }
