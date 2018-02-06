@@ -39,4 +39,11 @@ class FizzBuzzTests: XCTestCase {
         XCTAssertEqual(result, "fizzbuzz")
     }
     
+    func testMaths4() {
+        let fizzbuzz = fizzBuzz()
+        let result = fizzbuzz.maths(number: 7)
+        XCTAssertEqual(result, "\(7)")
+    }
+        
+    
 }
