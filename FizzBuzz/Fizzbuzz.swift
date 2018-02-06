@@ -25,3 +25,8 @@ class fizzBuzz {
     }
     
 }
+let fizzbuzz = fizzBuzz()
+let result = fizzbuzz.maths(number: 5)
+
+
+
